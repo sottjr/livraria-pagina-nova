@@ -4,7 +4,7 @@ const Sequelize = require("sequelize");
 
 const DB_NAME = process.env.DB_NAME;
 const DB_USER = process.env.DB_USER;
-const DB_PASS = "";
+const DB_PASS = process.env.DB_PASSWORD;
 const DB_CONFIG = {
   dialect: process.env.DB_DIALECT,
   host: process.env.DB_HOST,
